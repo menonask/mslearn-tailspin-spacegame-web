@@ -41,10 +41,12 @@ steps:
 - template: templates/build.yml
   parameters:
     buildConfiguration: 'Debug'
+    autoCommit: 'true'
 
 - template: templates/build.yml
   parameters:
     buildConfiguration: 'Release'
+    autoCommit: 'true'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'

@@ -1,5 +1,6 @@
 parameters:
   buildConfiguration: 'Release'
+  autoCommit: 'false'
 
 steps:
 - task: DotNetCoreCLI@2
